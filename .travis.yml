@@ -11,7 +11,7 @@ before_script:
   - npm install -g @angular/cli
 script:
   - npm install
-  - ng build --prod
+  - npm run build
 deploy:
   skip_cleanup: true
   provider: firebase
