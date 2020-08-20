@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgxSpinnerModule } from 'ngx-spinner';
 import { AppComponent } from './app.component';
 import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
@@ -26,8 +25,7 @@ const config: ExtraOptions = {
     BrowserModule,
     RouterModule.forRoot(routes, config),
     ProfileModule,
-    HttpClientModule,
-    NgxSpinnerModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
